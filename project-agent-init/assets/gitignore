@@ -1,0 +1,35 @@
+**/node_modules
+**/dist
+**/package-lock.json
+
+# ---- Java / Maven ----
+target/
+*.class
+.mvn/wrapper/maven-wrapper.jar
+
+# ---- 前端 web/（npm + vite）----
+node_modules/
+dist/
+*.local
+
+# ---- 所有隐藏目录（任意层级）默认忽略：IDE/工具运行产物，以后新增的无需再登记 ----
+.*/
+!.scratch/
+
+# ---- .scratch 是项目共有资产（spec/票据），整体保留；仅忽略本机进程登记 ----
+.scratch/pids/
+
+# ---- 日志与运行产物 ----
+logs/
+*.log
+npm-debug.log*
+
+# ---- IDE 工程文件 ----
+*.iml
+
+# ---- Python（skill 脚本缓存）----
+__pycache__/
+*.pyc
+
+# ---- 系统 ----
+.DS_Store
